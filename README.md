@@ -1,4 +1,4 @@
-# Quranic Theme Explorer
+# [Quranic Theme Explorer](quran-theme-explorer.vercel.app)
 
 A web app that helps you explore the Quran through meaningful themes and search. Discover verses about mercy, patience, gratitude, and more with just a click.
 
