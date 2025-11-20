@@ -17,11 +17,11 @@ export interface QuranVerse {
 }
 
 export interface SearchResult {
-  verseId: number;        // "23" style ID
-  verseKey: string;       // "2:33" style key
-  text: string;    // Arabic text
-  highlighted?: string;   // "<b>Mercy</b>"
-  translations?: Translation[]; // Array of translations
+  verseId: number;
+  verseKey: string;
+  text: string;
+  highlighted?: string;
+  translations?: Translation[];
 }
 
 export interface SearchResponse {

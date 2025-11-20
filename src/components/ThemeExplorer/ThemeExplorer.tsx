@@ -13,13 +13,13 @@ export const ThemeExplorer = () => {
   const showingResults = showingSearchResults || showingThemeResults;
 
   const handleSearch = async (query: string) => {
-    clearResults(); // Clear theme results when searching
+    clearResults();
     await exploreQuery(query);
   };
 
   const handleThemeClick = (themeId: string) => {
     console.log('🎯 Theme button clicked:', themeId);
-    clearSearch(); // Clear search results when clicking themes
+    clearSearch();
     exploreTheme(themeId);
   };
 
@@ -38,7 +38,7 @@ export const ThemeExplorer = () => {
 
         {/* Search Bar - Simple Center */}
         <div className="flex justify-center mb-12">
-          <div className="w-96"> {/* Fixed width for search bar */}
+          <div className="w-96">
             <SearchBar
               onSearch={handleSearch}
               loading={searchLoading}
@@ -128,7 +128,8 @@ export const ThemeExplorer = () => {
                           - {verse.translations[0].resourceName}
                         </p>
                       </div>
-                    )}                 </div>
+                    )}
+                  </div>
                 </div>
               ))}
             </div>

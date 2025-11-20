@@ -27,16 +27,15 @@ export async function GET(
     // Use the search results directly - they have everything we need!
     const allVerses = allResults.flatMap(result => result.results || []);
     const uniqueVerses = Array.from(new Map(
-      allVerses.map(verse => [verse.verseId, verse])
+      allVerses.map(verse => [verse.verseKey, verse])
     ).values());
 
     console.log('Returning verses:', uniqueVerses.length);
 
-    // RETURN THE SEARCH RESULTS DIRECTLY
     return Response.json({
       theme: theme.name,
       description: theme.description,
-      results: uniqueVerses.slice(0, 10), // ← This is what matters!
+      results: uniqueVerses.slice(0, 10),
       totalResults: uniqueVerses.length
     });
 
