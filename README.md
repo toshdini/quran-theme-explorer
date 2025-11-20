@@ -1,36 +1,36 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Quranic Theme Explorer
 
-## Getting Started
+A web app that helps you explore the Quran through meaningful themes and search. Discover verses about mercy, patience, gratitude, and more with just a click.
 
-First, run the development server:
+## What It Does
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+- **Explore by Theme**: Click on themes like "Divine Mercy" or "Patience & Perseverance" to see relevant Quranic verses
+- **Search Anything**: Type any word to find related verses across the Quran  
+- **Beautiful Display**: See Arabic text with English translations in a clean, readable interface
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Features
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- 🎯 **Theme-based discovery** - Pre-defined themes for easy exploration
+- 🔍 **Smart search** - Find verses by any keyword
+- 📖 **Dual language** - Arabic text with English translations
+- 📱 **Mobile-friendly** - Works perfectly on all devices
+- ⚡ **Fast & modern** - Built with Next.js and Tailwind CSS
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## How to Use
 
-## Learn More
+1. **Choose a theme** - Click any theme button to see related verses
+2. **Or search** - Type any word in the search bar and press Enter
+3. **Read & reflect** - Browse through the verses with translations
 
-To learn more about Next.js, take a look at the following resources:
+## For Developers
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+This is built with:
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+- Next.js 14 with App Router
+- TypeScript
+- Tailwind
+- Quran.Foundation API for authentic content
 
-## Deploy on Vercel
+Perfect for learning React, API integration, and building meaningful applications!
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+---
