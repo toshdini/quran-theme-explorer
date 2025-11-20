@@ -1,18 +1,8 @@
-'use client'
-import { useState, useCallback } from "react";
-
-export interface ThemeVerse {
-  id: number,
-  verse_key: string,
-  text_uthmani: string,
-  translations: Array<{
-    text: string,
-    rescource_name: string
-  }>;
-}
+'use client';
+import { useState, useCallback } from 'react';
 
 export const useThemes = () => {
-  const [verses, setVerses] = useState<ThemeVerse[]>([]);
+  const [verses, setVerses] = useState<any[]>([]);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState<string | null>(null);
   const [currentTheme, setCurrentTheme] = useState<string | null>(null);
@@ -24,12 +14,15 @@ export const useThemes = () => {
 
     try {
       const response = await fetch(`/api/themes/${themeId}`);
+
       if (!response.ok) {
-        throw new Error(`Failed to Load Theme: ${response.status}`);
+        throw new Error(`Failed to load theme: ${response.status}`);
       }
 
       const data = await response.json();
-      setVerses(data.verses || []);
+
+      setVerses(data.results || []);
+
     } catch (err) {
       setError(err instanceof Error ? err.message : 'Failed to load theme');
       setVerses([]);
