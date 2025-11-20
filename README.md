@@ -31,6 +31,4 @@ This is built with:
 - Tailwind
 - Quran.Foundation API for authentic content
 
-Perfect for learning React, API integration, and building meaningful applications!
-
 ---
