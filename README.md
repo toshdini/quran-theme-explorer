@@ -2,33 +2,22 @@
 
 A web app that helps you explore the Quran through meaningful themes and search. Discover verses about mercy, patience, gratitude, and more with just a click.
 
-## What It Does
+## What I Built
+A Quran theme explorer that lets users discover verses through meaningful themes like mercy and patience, plus a search feature for finding any topic.
 
-- **Explore by Theme**: Click on themes like "Divine Mercy" or "Patience & Perseverance" to see relevant Quranic verses
-- **Search Anything**: Type any word to find related verses across the Quran  
-- **Beautiful Display**: See Arabic text with English translations in a clean, readable interface
+## The Core Idea
+Instead of making people search randomly, I created themed pathways into the Quran. Click "Divine Mercy" and instantly see verses about compassion and forgiveness. It's like having a guided tour through the Quran's key themes.
 
-## Features
+## Technical Approach
+I used a modern web stack with Next.js for the framework, TypeScript for reliability, and Tailwind CSS for clean design. The real magic happens with the Quran Foundation API - it handles the complex search and returns authentic verse data.
 
-- 🎯 **Theme-based discovery** - Pre-defined themes for easy exploration
-- 🔍 **Smart search** - Find verses by any keyword
-- 📖 **Dual language** - Arabic text with English translations
-- 📱 **Mobile-friendly** - Works perfectly on all devices
-- ⚡ **Fast & modern** - Built with Next.js and Tailwind CSS
+## Challenge & Solution
+The biggest hurdle was the API authentication. Their system uses OAuth2 which can be tricky, but I implemented their official SDK that handles all the security automatically. This meant I could focus on building a great user experience instead of wrestling with tokens.
 
-## How to Use
+## User Experience Focus
+I kept it simple and intuitive - big colorful theme buttons up top, a clean search bar, and beautiful verse displays with Arabic text and English translations side by side. The app works perfectly on phones and computers.
 
-1. **Choose a theme** - Click any theme button to see related verses
-2. **Or search** - Type any word in the search bar and press Enter
-3. **Read & reflect** - Browse through the verses with translations
-
-## For Developers
-
-This is built with:
-
-- Next.js 14 with App Router
-- TypeScript
-- Tailwind
-- Quran.Foundation API for authentic content
+## The Result
+A fast, beautiful app that makes Quran exploration accessible and meaningful. Users can either follow the themed paths or forge their own with search - both leading to authentic Quranic verses.
 
 ---
